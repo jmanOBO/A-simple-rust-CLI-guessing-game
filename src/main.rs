@@ -9,7 +9,7 @@ fn main() {
         let attempt_to_parse_guess = guess.trim().parse::<i32>();
         let _parsed_guess = match attempt_to_parse_guess {
             Ok(num) => {
-                if num > 10 || num < 1 {
+                if num > 10 || num < 0 {
                     println!("Invalid input");
                     continue;
                 } else {
